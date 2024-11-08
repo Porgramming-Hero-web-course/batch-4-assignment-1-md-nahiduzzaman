@@ -29,7 +29,7 @@ Here, `value` can be either a `string` or a `number`.
 
 ### Where is Union type needed?
 
-The Intersection type is needed when an object will contain attributes of more than one type. In this way we can create large and detailed data models.
+The Union type is useful when a variable can hold multiple possible types, such as a `string` or `number`. This adds flexibility to your code while maintaining type safety.
 
 ```typescript
 function displayValue(value: string | number) {
@@ -58,11 +58,11 @@ You can create an intersection type using the `&` operator.
 let Person: { name: string } & { age: number };
 ```
 
-Here `Person` object will combination of name and age.
+Here, the `person` object combines properties from both types, so it must have both `name` and `age` attributes.
 
 ### Where is Intersection type needed?
 
-The Intersection type is needed when an object will contain attributes of more than one type. In this way we can create large and detailed data models.
+Intersection types are useful when you need an object to have properties from multiple types, allowing you to create complex and detailed data models.
 
 ```typescript
 interface Person1 {
